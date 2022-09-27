@@ -4,6 +4,10 @@
 class Car
 {
 public:
+
+	void Print();
+	void Drive(float driveDistance);
+
 	std::string make;
 	std::string model;
 	int doors;
@@ -11,4 +15,3 @@ public:
 	float mpg;
 	float petrol;
 };
-
