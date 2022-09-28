@@ -43,4 +43,8 @@ int main()
     car1.Print();
     car2.Print();
     car3.Print();
+
+    Car car4("Mario", "Kart", 4, 18342, 64, 50);
+    car4.Print();
+    // Car 4 has no information until it is given some by this constructor
 }
