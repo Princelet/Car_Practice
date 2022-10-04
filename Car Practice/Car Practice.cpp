@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Car.h"
 
 int main()
@@ -32,10 +33,20 @@ int main()
     car3.mpg = 63.0f;
     car3.petrol = 43.0f;
 
-    car1.Print();
-    car2.Print();
-    car3.Print();
 
+    // Add cars to vector
+    std::vector<Car> carVector;
+    carVector.push_back(car1);
+    carVector.push_back(car2);
+    carVector.push_back(car3);
+
+    // Print all car copies in vector
+    for (int i = 0; i < carVector.size(); ++i)
+    {
+        carVector[i].Print();
+    }
+
+    // Drive cars in vector to increase mileage and decrease fuel
     car1.Drive(6.0f);
     car2.Drive(25.0f);
     car3.Drive(14.0f);
@@ -43,6 +54,7 @@ int main()
     car1.Print();
     car2.Print();
     car3.Print();
+
 
     Car car4("Mario", "Kart", 4, 18342, 64, 50);
     car4.Print();
