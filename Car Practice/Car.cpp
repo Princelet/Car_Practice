@@ -6,17 +6,21 @@ Car::Car()
     , mileage(0)
     , mpg(0)
     , petrol(100)
+    , serial(0)
+    , parked(false)
 {
     std::cout << "Car constructed!\n";
 }
 
-Car::Car(std::string newMake, std::string newModel, int newDoors, float newMileage, float newMpg, float newPetrol)
+Car::Car(std::string newMake, std::string newModel, int newDoors, float newMileage, float newMpg, float newPetrol, int newSerial)
     : make(newMake)
     , model(newModel)
     , doors(newDoors)
     , mileage(newMileage)
     , mpg(newMpg)
     , petrol(newPetrol)
+    , serial(newSerial)
+    , parked(false)
 {
     std::cout << "\nCar constructed using params!\n";
 }
