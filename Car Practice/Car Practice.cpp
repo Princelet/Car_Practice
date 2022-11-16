@@ -10,34 +10,9 @@
 
 int main()
 {
-    Car car1;
-    Car car2;
-    Car car3;
-
-    car1.make = "Vauxhall";
-    car1.model = "Corsa";
-    car1.doors = 4;
-    car1.mileage = 42354.0f;
-    car1.mpg = 50.0f;
-    car1.petrol = 40.0f;
-    car1.serial = 1111;
-
-    car2.make = "Ford";
-    car2.model = "Fiesta";
-    car2.doors = 4;
-    car2.mileage = 25453.0f;
-    car2.mpg = 54.0f;
-    car2.petrol = 42.0f;
-    car2.serial = 2222;
-
-    car3.make = "Toyota";
-    car3.model = "Corolla";
-    car3.doors = 2;
-    car3.mileage = 1236.0f;
-    car3.mpg = 63.0f;
-    car3.petrol = 43.0f;
-    car3.serial = 3333;
-
+    Car car1("Vauxhall", "Corsa,", 4, 42354.0f, 50.0f, 40.0f, 1111);
+    Car car2("Ford", "Fiesta", 4, 25453.0f, 54.0f, 42.0f, 2222);
+    Car car3("Toyota", "Corolla", 2, 12365.0f, 63.0f, 43.0f, 3333);
 
     // Add cars to vector
     std::vector<Car> carVector;
@@ -63,10 +38,10 @@ int main()
 
     Car car4("Mario", "Kart", 4, 18342, 64, 50, 8008);
     car4.Print();
-    // Car 4 has no information until it is given some by this constructor
 
 
-
+    // Map of Cars
+    /*
 
     // Map of cars, doesnt work but no error?
     std::map<int, Car> carMap;
@@ -108,5 +83,20 @@ int main()
     spaceVector[1].Print();
     spaceVector[1].Exit();
     spaceVector[1].Print();
+    */
+
+
+    // Getters and Setters
+
+    std::cout << "\n\nCar1 has " << car1.GetPetrol() << " gallons of petrol." << std::endl;
+
+    car1.SetPetrol(30.0f);
+    std::cout << "Car1 now has " << car1.GetPetrol() << " gallons of petrol." << std::endl;
+
+    car1.FillPetrol(5.0f);
+    std::cout << "Car1 now has " << car1.GetPetrol() << " gallons of petrol after being filled." << std::endl;
+
+    car1.FillPetrol(100.0f);
+    std::cout << "Car1 now has " << car1.GetPetrol() << " gallons of petrol after being filled way above the maximum." << std::endl;
 
 }

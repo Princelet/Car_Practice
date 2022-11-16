@@ -16,13 +16,13 @@ void Space::Park(Car newCar)
 {
 	car = newCar;
 	hasCar = true;
-	std::cout << "\nCar " << car.make << " " << car.model << " parked in the space.";
+	std::cout << "\nCar " << car.GetMake() << " " << car.GetModel() << " parked in the space.";
 }
 
 void Space::Exit()
 {
 	hasCar = false;
-	std::cout << "\nCar " << car.make << " " << car.model << " exited the space.";
+	std::cout << "\nCar " << car.GetMake() << " " << car.GetModel() << " exited the space.";
 }
 
 void Space::Print()

@@ -14,6 +14,7 @@ public:
 	void Exit();
 	void Print();
 
+private:
 	bool hasCar;
 	Car car;
 };
