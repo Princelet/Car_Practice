@@ -1,4 +1,5 @@
 #include "Space.h"
+#include <iostream>
 
 
 Space::Space()

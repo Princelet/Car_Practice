@@ -142,12 +142,18 @@
     <ClCompile Include="Car Practice.cpp" />
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="CarPark.cpp" />
+    <ClCompile Include="Motorbike.cpp" />
     <ClCompile Include="Space.cpp" />
+    <ClCompile Include="Truck.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
     <ClInclude Include="CarPark.h" />
+    <ClInclude Include="Motorbike.h" />
     <ClInclude Include="Space.h" />
+    <ClInclude Include="Truck.h" />
+    <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

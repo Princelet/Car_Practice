@@ -6,13 +6,17 @@
 #include <vector>
 #include <map>
 #include "Car.h"
+#include "Motorbike.h"
+#include "Truck.h"
 #include "Space.h"
 
 int main()
 {
-    Car car1("Vauxhall", "Corsa,", 4, 42354.0f, 50.0f, 40.0f, 1111);
-    Car car2("Ford", "Fiesta", 4, 25453.0f, 54.0f, 42.0f, 2222);
-    Car car3("Toyota", "Corolla", 2, 12365.0f, 63.0f, 43.0f, 3333);
+    // Basic Cars Code
+    /*
+    Car car1("Vauxhall", "Corsa", 4, 4, 42354.0f, 50.0f, 40.0f, 1111);
+    Car car2("Ford", "Fiesta", 4, 4, 25453.0f, 54.0f, 42.0f, 2222);
+    Car car3("Toyota", "Corolla", 2, 4, 12365.0f, 63.0f, 43.0f, 3333);
 
     // Add cars to vector
     std::vector<Car> carVector;
@@ -36,9 +40,9 @@ int main()
     car3.Print();
 
 
-    Car car4("Mario", "Kart", 4, 18342, 64, 50, 8008);
+    Car car4("Mario", "Kart", 4, 4, 18342, 64, 50, 8008);
     car4.Print();
-
+    */
 
     // Map of Cars
     /*
@@ -85,9 +89,8 @@ int main()
     spaceVector[1].Print();
     */
 
-
     // Getters and Setters
-
+    /*
     std::cout << "\n\nCar1 has " << car1.GetPetrol() << " gallons of petrol." << std::endl;
 
     car1.SetPetrol(30.0f);
@@ -98,5 +101,14 @@ int main()
 
     car1.FillPetrol(100.0f);
     std::cout << "Car1 now has " << car1.GetPetrol() << " gallons of petrol after being filled way above the maximum." << std::endl;
+    */
 
+
+    Motorbike vBike("Cool", "Bike", 0, 2, 13844, 40, 38, 6969);
+    Truck vTruck("Mike", "Truck", 2, 6, 148392, 60, 48, 3456, "Dirt");
+    Car vCar("Family", "Convertible", 4, 4, 2834, 45, 40, 6789);
+
+    vBike.Print();
+    vTruck.Print();
+    vCar.Print();
 }
